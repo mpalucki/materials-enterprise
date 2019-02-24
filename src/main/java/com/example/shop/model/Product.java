@@ -5,13 +5,14 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.List;
 
 
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
 public class Product {
     @Id
-    private long id;
+    private Long id;
 
     @Column
     private String name;
