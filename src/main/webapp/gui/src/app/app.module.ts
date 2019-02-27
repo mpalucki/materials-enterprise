@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './products/products.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
+import {HttpClientModule} from "@angular/common/http";
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     ContactComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
